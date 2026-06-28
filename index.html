@@ -504,6 +504,7 @@
       display: grid;
       grid-template-columns: 200px 1fr;
       gap: 56px;
+      align-items: start;
     }
     .author-card {
       background: var(--black);
@@ -512,8 +513,9 @@
     .author-photo {
       width: 100%;
       display: block;
-      aspect-ratio: 4 / 5;
+      aspect-ratio: 1 / 1;
       object-fit: cover;
+      object-position: center top;
       background: #1c1c1c;
     }
     .author-card-meta {
@@ -1093,6 +1095,10 @@
       .author-layout {
         grid-template-columns: 1fr;
         gap: 32px;
+      }
+      .author-card {
+        max-width: 280px;
+        margin: 0 auto;
       }
       .compare {
         grid-template-columns: 1fr;
